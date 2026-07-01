@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>소원의 행성 - 고객지원</title>
+<style>
+  :root {
+    --bg: #0A0028;
+    --primary: #8B5CF6;
+    --gold: #D4AF37;
+    --text: #F1EAFB;
+    --muted: #B8A9D9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: radial-gradient(ellipse at top, #1a0a4a 0%, var(--bg) 60%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.7;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .logo {
+    font-size: 44px;
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 24px;
+    margin: 0 0 4px;
+    color: var(--gold);
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 17px;
+    color: var(--primary);
+    border-left: 3px solid var(--primary);
+    padding-left: 10px;
+    margin-top: 40px;
+  }
+  .card {
+    background: rgba(139, 92, 246, 0.08);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-top: 12px;
+  }
+  .faq-item { margin-bottom: 18px; }
+  .faq-item:last-child { margin-bottom: 0; }
+  .faq-q {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  .faq-a {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  .contact-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 20px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .contact-btn:hover { text-decoration: none; opacity: 0.9; }
+  footer {
+    text-align: center;
+    margin-top: 64px;
+    color: var(--muted);
+    font-size: 12px;
+  }
+</style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">🪐</div>
+      <h1>소원의 행성 (Planet Wish)</h1>
+      <div class="subtitle">고객지원 및 문의</div>
+    </header>
+
+    <h2>문의하기</h2>
+    <div class="card">
+      <p>앱 이용 중 문제가 있거나 궁금한 점이 있으시면 아래 이메일로 연락해 주세요. 최대한 빠르게 답변드리겠습니
+다.</p>
+      <a class="contact-btn" href="mailto:prometheusdev0916@gmail.com">이메일 문의하기</a>
+    </div>
+
+    <h2>자주 묻는 질문</h2>
+    <div class="card">
+      <div class="faq-item">
+        <div class="faq-q">내 소원과 생년월일 정보는 어디에 저장되나요?</div>
+        <div class="faq-a">모든 정보는 서버로 전송되지 않고 사용자 기기에만 로컬로 저장됩니다.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">생년월일을 변경하고 싶어요.</div>
+        <div class="faq-a">홈 화면의 '변경' 버튼을 눌러 언제든지 다시 입력하실 수 있습니다.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">언어를 바꾸고 싶어요.</div>
+        <div class="faq-a">앱은 기기의 시스템 언어(한국어/영어/중국어/일본어)를 자동으로 따릅니다.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">광고가 나오는 이유는 무엇인가요?</div>
+        <div class="faq-a">앱은 무료로 제공되며, 리워드 광고 시청은 선택 사항으로 추가 기능 이용에만 사용됩니다.<
+/div>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2026 소원의 행성 (Planet Wish). All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
