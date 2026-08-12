@@ -1,31 +1,182 @@
-Lucky Ticket Support
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support and frequently asked questions for Lucky Ticket.">
+  <meta name="robots" content="index,follow">
+  <title>Lucky Ticket Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #fffaf2;
+      --surface: #ffffff;
+      --text: #241b12;
+      --muted: #6f6255;
+      --accent: #a94f00;
+      --border: #eadccb;
+      --notice: #fff1dc;
+    }
 
-  Lucky Ticket is a simulated scratch-card game for entertainment only.
-  All tickets, coins, and prizes are virtual items and have no real-world
-  monetary value.
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #17120d;
+        --surface: #211a14;
+        --text: #fff7ed;
+        --muted: #c9b8a5;
+        --accent: #ffb45f;
+        --border: #493a2d;
+        --notice: #352513;
+      }
+    }
 
-  Frequently Asked Questions
+    * { box-sizing: border-box; }
 
-  1. I did not receive my rewarded tickets.
-  Please check your internet connection and try again later. Rewards are
-  provided only after the advertisement has been completed successfully.
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+    }
 
-  2. Can I withdraw or exchange virtual coins?
-  No. Virtual coins, tickets, and prizes cannot be withdrawn, transferred, sold,
-  or exchanged for cash, gift cards, physical goods, or anything of real-world
-  value.
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: clamp(24px, 5vw, 48px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgb(45 27 8 / 8%);
+    }
 
-  3. Is this a real lottery or gambling service?
-  No. Lucky Ticket does not sell real lottery tickets or provide real-money
-  gambling. It is a simulated game created solely for entertainment.
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.25;
+    }
 
-  4. Where is my game progress stored?
-  Your ticket inventory, virtual coin balance, and gameplay statistics are
-  stored locally on your device. Removing the app may permanently delete this
-  data.
+    h2 {
+      margin: 40px 0 12px;
+      font-size: 22px;
+    }
 
-  Contact
+    h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
 
-  If you need assistance, contact us at:
-  prometheus0916@gmail.com
+    p { margin: 8px 0; }
+    a { color: var(--accent); }
+    .subtitle { color: var(--muted); }
 
+    .notice {
+      margin-top: 24px;
+      padding: 16px 18px;
+      background: var(--notice);
+      border-radius: 12px;
+    }
+
+    .faq {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq:last-of-type { border-bottom: 0; }
+
+    .contact {
+      padding: 18px;
+      background: var(--background);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    @media (max-width: 560px) {
+      main {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Lucky Ticket Support</h1>
+      <p class="subtitle">Help and frequently asked questions</p>
+    </header>
+
+    <div class="notice">
+      Lucky Ticket is a simulated scratch-card game for entertainment only.
+      All tickets, coins, and prizes are virtual items and have no real-world
+      monetary value.
+    </div>
+
+    <section aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+
+      <article class="faq">
+        <h3>1. I did not receive my rewarded tickets.</h3>
+        <p>
+          Please check your internet connection and try again later. Rewards
+          are provided only after the advertisement has been completed
+          successfully.
+        </p>
+      </article>
+
+      <article class="faq">
+        <h3>2. Can I withdraw or exchange virtual coins?</h3>
+        <p>
+          No. Virtual coins, tickets, and prizes cannot be withdrawn,
+          transferred, sold, or exchanged for cash, gift cards, physical goods,
+          or anything of real-world value.
+        </p>
+      </article>
+
+      <article class="faq">
+        <h3>3. Is this a real lottery or gambling service?</h3>
+        <p>
+          No. Lucky Ticket does not sell real lottery tickets or provide
+          real-money gambling. It is a simulated game created solely for
+          entertainment.
+        </p>
+      </article>
+
+      <article class="faq">
+        <h3>4. Where is my game progress stored?</h3>
+        <p>
+          Your ticket inventory, virtual coin balance, and gameplay statistics
+          are stored locally on your device. Removing the app may permanently
+          delete this data.
+        </p>
+      </article>
+    </section>
+
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <div class="contact">
+        <p>If you need assistance, contact us at:</p>
+        <p>
+          <a href="mailto:prometheus0916@gmail.com">prometheus0916@gmail.com</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Lucky Ticket Support</p>
+    </footer>
+  </main>
+</body>
+</html>
