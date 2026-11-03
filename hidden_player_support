@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Support for Hidden Player for Mac. Get help with window opacity, appearance, video playback, purchases, and restoring your unlock.">
+  <title>Hidden Player — Support</title>
+  <link rel="icon" type="image/png" href="app-icon.png">
+  <style>
+    :root { color-scheme: light dark; --bg: #f5f7fc; --card: #fff; --ink: #162338; --muted: #52617a; --line: #dce3ef; --accent: #0754cb; --soft: #eaf2ff; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color: var(--accent); text-underline-offset: 4px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; border-radius: 4px; }
+    .skip { position: absolute; top: -80px; left: 16px; padding: 10px; background: var(--card); z-index: 2; }
+    .skip:focus { top: 12px; }
+    .wrap { max-width: 940px; margin: 0 auto; padding: 0 28px; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 30px 0; border-bottom: 1px solid var(--line); }
+    .brand { color: var(--ink); font-size: 17px; font-weight: 700; text-decoration: none; }
+    nav { display: flex; gap: 22px; font-size: 14px; }
+    nav a { color: var(--muted); text-decoration: none; }
+    .hero { padding: 62px 0 46px; display: grid; grid-template-columns: 1fr 144px; align-items: center; gap: 36px; }
+    .eyebrow { margin: 0 0 12px; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    h1 { margin: 0 0 16px; font-size: clamp(36px, 6vw, 54px); line-height: 1.08; letter-spacing: -.045em; }
+    .lead { margin: 0; color: var(--muted); font-size: 18px; max-width: 570px; }
+    .app-icon { width: 144px; height: 144px; border-radius: 30px; box-shadow: 0 16px 38px #001a5230; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+    .chip { font-size: 12px; color: var(--muted); padding: 4px 11px; border: 1px solid var(--line); border-radius: 100px; }
+    section { margin-bottom: 26px; }
+    .card { padding: 28px 30px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; }
+    h2 { margin: 0 0 15px; font-size: 22px; line-height: 1.3; letter-spacing: -.025em; }
+    h3 { margin: 0 0 8px; font-size: 16px; }
+    p { margin: 0 0 14px; }
+    p:last-child { margin-bottom: 0; }
+    ol, ul { margin: 0; padding-left: 23px; }
+    li + li { margin-top: 9px; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .feature { background: var(--soft); border-radius: 12px; padding: 20px; }
+    .feature p { color: var(--muted); font-size: 14px; }
+    .range { display: block; color: var(--accent); font-size: 28px; font-weight: 700; letter-spacing: -.04em; margin-bottom: 5px; }
+    .note { margin-top: 18px; font-size: 14px; color: var(--muted); }
+    details { padding: 17px 0; border-top: 1px solid var(--line); }
+    details:last-child { padding-bottom: 0; }
+    summary { cursor: pointer; font-weight: 600; padding-right: 8px; }
+    details p { padding-top: 12px; color: var(--muted); font-size: 15px; }
+    .contact-details { border-left: 3px solid var(--accent); padding-left: 18px; margin: 20px 0; }
+    footer { padding: 16px 0 38px; color: var(--muted); font-size: 12px; }
+    footer p + p { margin-top: 8px; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0b1220; --card: #121d2e; --ink: #edf3ff; --muted: #a8b8d0; --line: #2a3950; --accent: #86baff; --soft: #182a43; }
+    }
+    @media (max-width: 560px) {
+      .wrap { padding: 0 20px; }
+      header { gap: 16px; padding: 22px 0; }
+      nav { gap: 14px; font-size: 13px; }
+      .hero { grid-template-columns: 1fr; gap: 22px; padding: 36px 0 30px; }
+      .app-icon { grid-row: 1; width: 76px; height: 76px; border-radius: 17px; }
+      .card { padding: 23px 20px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./">Hidden Player</a>
+      <nav aria-label="Support navigation">
+        <a href="#getting-started">Start here</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">Hidden Player Support</p>
+          <h1>A clearer way to<br>watch while you work.</h1>
+          <p class="lead">Help with your semi-transparent video windows, appearance settings, and purchases.</p>
+          <div class="chips"><span class="chip">macOS 13 or later</span><span class="chip">Independent window controls</span></div>
+        </div>
+        <img class="app-icon" src="app-icon.png" width="144" height="144" alt="Hidden Player app icon">
+      </div>
+
+      <section class="card" id="getting-started" aria-labelledby="start-title">
+        <h2 id="start-title">Get started</h2>
+        <ol>
+          <li>Launch Hidden Player and search for a video in the YouTube window.</li>
+          <li>Select a video to open it in a separate playback window.</li>
+          <li>Click the <strong>play-shaped icon in the macOS menu bar</strong> to open the controls.</li>
+          <li>Use <strong>Search</strong> or <strong>Playback</strong> to adjust each window’s opacity and choose <strong>Dark</strong> or <strong>Light</strong> appearance.</li>
+        </ol>
+        <p class="note">Move an opacity slider left to make its window more transparent. Both windows start at 50% opacity. Resize a window by dragging its edges.</p>
+      </section>
+
+      <section class="card" id="purchases" aria-labelledby="purchase-title">
+        <h2 id="purchase-title">Opacity unlock</h2>
+        <div class="grid">
+          <div class="feature"><h3>Included for free</h3><span class="range">30–100%</span><p>Adjust opacity independently for your search and playback windows. Video playback stays free.</p></div>
+          <div class="feature"><h3>One-time purchase</h3><span class="range">5–100%</span><p>Unlock lower opacity for both windows permanently. No subscription.</p></div>
+        </div>
+        <p class="note">To purchase, open the menu bar controls and select <strong>Unlock Opacity Down to 5%</strong>. The current price appears in your local currency before purchase.</p>
+      </section>
+
+      <section class="card" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Frequently asked questions</h2>
+        <details>
+          <summary>How do I restore my purchase?</summary>
+          <p>Use the Apple Account that made the purchase. Open the menu bar controls and click <strong>Restore Purchases</strong>. An internet connection may be needed to synchronize your purchase with the App Store.</p>
+        </details>
+        <details>
+          <summary>I paid, but the slider still stops at 30%.</summary>
+          <p>Open the menu bar controls and select <strong>Restore Purchases</strong>. If your purchase is awaiting approval, the unlock applies after approval. If the issue continues, contact support with the message displayed in the controls.</p>
+        </details>
+        <details>
+          <summary>Why is a video unavailable or not playing?</summary>
+          <p>Some videos do not allow embedded playback or have account, age, or regional restrictions. Check your internet connection and try another video. You may need to click the play button to begin playback.</p>
+        </details>
+        <details>
+          <summary>Where are the opacity settings?</summary>
+          <p>Click the play-shaped Hidden Player icon beside the clock in the macOS menu bar. Opacity settings are in this panel, rather than inside the video window.</p>
+        </details>
+        <details>
+          <summary>What happens when I close a window?</summary>
+          <p>Closing the playback window stops that video and leaves the search window open. Closing the last remaining app window quits Hidden Player.</p>
+        </details>
+        <details>
+          <summary>Does transparency hide a video from screen sharing?</summary>
+          <p>No. Opacity controls change how a window looks. The app does not guarantee that a video is hidden from screen sharing, screenshots, or recordings.</p>
+        </details>
+        <details>
+          <summary>How do I request a refund?</summary>
+          <p>Apple handles App Store billing and refund requests. Visit <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> to check the available options for your purchase.</p>
+        </details>
+      </section>
+
+      <section class="card" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">Need a hand?</p>
+        <h2 id="contact-title">Contact support</h2>
+        <p>For help with Hidden Player, include your app version, macOS version, a description of the issue, and any error message you see.</p>
+        <div class="contact-details">
+          <p><a href="mailto:ninano0916@gmail.com">ninano0916@gmail.com</a></p>
+        </div>
+        <p class="muted">Please do not send passwords, payment card details, or other sensitive information.</p>
+      </section>
+    </main>
+    <footer>
+      <p>© 2026 NINANO Inc. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+      <p>Hidden Player is an independent app and is not affiliated with or endorsed by YouTube or Google. YouTube is a trademark of Google LLC. Videos remain the property of their respective owners.</p>
+    </footer>
+  </div>
+</body>
+</html>
