@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="니나노컴퍼니(NINANO COMPANY)는 일상에 즐거움과 새로운 경험을 더하는 모바일 앱을 만듭니다.">
+  <meta name="theme-color" content="#0d152b">
+  <title>니나노컴퍼니 | NINANO COMPANY</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1121;--card:#151e35;--line:#29334a;--text:#f6f8ff;--muted:#a7b4ce;--accent:#8a9bff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.7}
+    a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid #aab7ff;outline-offset:4px;border-radius:8px}
+    .wrap{width:min(1080px,calc(100% - 40px));margin:auto}
+    header{border-bottom:1px solid rgba(255,255,255,.08)}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+    .brand{font-weight:900;letter-spacing:.07em;font-size:19px}.brand b{color:#acb5ff}.navlinks{display:flex;gap:26px;color:#c2cee5;font-size:14px}
+    .hero{padding:112px 0 100px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:510px;height:510px;top:-255px;left:50%;transform:translateX(-50%);background:#5365d5;opacity:.16;filter:blur(100px);pointer-events:none}
+    .eyebrow{color:#b0baff;font-size:13px;font-weight:800;letter-spacing:.22em}.hero h1{font-size:clamp(37px,6vw,66px);line-height:1.22;letter-spacing:-.055em;margin:20px 0 24px;font-weight:850}.hero p{font-size:clamp(15px,2vw,19px);color:var(--muted);margin:0;max-width:600px}.hero .btn{margin-top:34px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#ecf0ff;color:#17203a;padding:13px 23px;border-radius:12px;font-weight:800;font-size:14px;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px);background:#dbe2ff}.btn.secondary{background:#263453;color:#fff}.btn.secondary:hover{background:#344669}
+    .section{padding:32px 0 112px}.section-head{margin-bottom:32px}.section-head span{color:#9baaff;letter-spacing:.16em;font-size:12px;font-weight:900}.section-head h2{font-size:clamp(27px,4vw,38px);letter-spacing:-.04em;margin:5px 0 8px}.section-head p{margin:0;color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.card{border:1px solid var(--line);background:linear-gradient(150deg,#1b2743,#121b30);border-radius:24px;padding:32px;min-height:360px;display:flex;flex-direction:column;align-items:flex-start;box-shadow:0 15px 50px #0002}.app-art{width:86px;height:86px;border-radius:20px;object-fit:cover;display:block;margin-bottom:26px;background:#25304b;box-shadow:0 8px 22px #0004}
+    .platform{font-size:12px;color:#b0baff;font-weight:800;letter-spacing:.06em}.card h3{font-size:27px;letter-spacing:-.03em;margin:7px 0 10px}.card p{color:var(--muted);font-size:15px;margin:0 0 30px}.card .btn{margin-top:auto}
+    .about{border-top:1px solid var(--line);padding:70px 0 90px}.about h2{font-size:28px;letter-spacing:-.04em;margin:0 0 12px}.about p{color:var(--muted);margin:0;max-width:650px}
+    footer{border-top:1px solid var(--line);padding:27px 0 33px;color:#8492b0;font-size:12px}.footer-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}footer strong{color:#cbd5ec;letter-spacing:.05em}
+    @media(max-width:680px){.nav{min-height:66px}.brand{font-size:16px}.navlinks{gap:15px;font-size:13px}.hero{padding:82px 0 76px}.section{padding:10px 0 75px}.cards{grid-template-columns:1fr}.card{min-height:320px;padding:27px}.about{padding:55px 0 70px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="니나노컴퍼니 홈">NINANO <b>COMPANY</b></a>
+      <nav class="navlinks" aria-label="주 메뉴"><a href="#apps">앱 소개</a><a href="#about">회사 소개</a></nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero"><div class="wrap">
+      <div class="eyebrow">NINANO COMPANY</div>
+      <h1>일상에 즐거움을 더하는<br>작은 아이디어.</h1>
+      <p>니나노컴퍼니는 누구나 쉽고 즐겁게 사용할 수 있는 모바일 앱을 만들어요.</p>
+      <a class="btn" href="#apps">우리의 앱 살펴보기 <span aria-hidden="true">↓</span></a>
+    </div></section>
+    <section class="section" id="apps"><div class="wrap">
+      <div class="section-head"><span>OUR APPS</span><h2>우리가 만든 앱</h2><p>작은 순간을 특별하게 만드는 두 가지 경험을 만나보세요.</p></div>
+      <div class="cards">
+        <article class="card">
+          <img class="app-art" src="https://ninano0907.github.io/privacy/fortune_icon.png" alt="소원의 행성 앱 아이콘" width="86" height="86">
+          <span class="platform">ANDROID · GOOGLE PLAY</span>
+          <h3>소원의 행성</h3>
+          <p>나만의 수호 행성과 함께 매일 소원을 떠올리고, 하루를 위한 작은 마음의 루틴을 만들어 보세요.</p>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.nano.fortune" target="_blank" rel="noopener noreferrer" aria-label="소원의 행성 Google Play 상세 페이지 열기">Google Play에서 보기 ↗</a>
+        </article>
+        <article class="card">
+          <img class="app-art" src="https://ninano0907.github.io/privacy/brain_bloom_icon.png" alt="두뇌쑥쑥 앱 아이콘" width="86" height="86">
+          <span class="platform">iOS · APP STORE</span>
+          <h3>두뇌쑥쑥</h3>
+          <p>기억력 놀이, 그림 찾기, 숫자 퍼즐 등 아이들의 눈높이에 맞춘 다채로운 생각 놀이를 즐겨보세요.</p>
+          <a class="btn secondary" href="https://apps.apple.com/kr/app/id6830994833" target="_blank" rel="noopener noreferrer" aria-label="두뇌쑥쑥 App Store 상세 페이지 열기">App Store에서 보기 ↗</a>
+        </article>
+      </div>
+    </div></section>
+    <section class="about" id="about"><div class="wrap"><h2>About NINANO</h2><p>니나노컴퍼니는 일상의 작은 아이디어를 실용적인 디지털 경험으로 연결하는 모바일 앱 개발 브랜드입니다. 단순하고 편리하면서도 즐거운 서비스를 지향합니다.</p></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><strong>NINANO COMPANY · 니나노컴퍼니</strong><span>© <span id="year">2026</span> NINANO COMPANY. All rights reserved.</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
